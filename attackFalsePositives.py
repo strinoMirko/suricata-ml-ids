@@ -246,8 +246,6 @@ def parse_args():
     p.add_argument("--use_tls", action="store_true")
     p.add_argument("--batch_size", type=int, default=10, help="Sessions per batch")
     p.add_argument("--workers", type=int, default=20, help="Thread pool size for parallel sessions")
-    p.add_argument("--attack_fraction", type=float, default=0.12, help="Fraction of sessions per batch that are attack-like")
-    p.add_argument("--output", default="traffic_loop_log.csv")
     p.add_argument("--min_delay", type=float, default=0.5, help="Min intra-session delay in seconds")
     p.add_argument("--max_delay", type=float, default=30.0, help="Max intra-session delay in seconds")
     p.add_argument("--session_start_jitter", type=float, default=2.0, help="Pre-session jitter seconds")
